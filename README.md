@@ -33,14 +33,21 @@ VAEs learn important patterns from real CSI data and can generate realistic but 
 3. How VAE Generates Synthetic CSI Data?
 
 Step 1: Train VAE on Real CSI Data
+
 Collect CSI data for different activities (falling, walking, sitting, etc.).
+
 Train the Encoder to map CSI data into a low-dimensional latent space (compressed representation).
+
 Train the Decoder to reconstruct the original CSI data from this latent space.
+
 The VAE learns the underlying distribution of CSI signals.
 
 Step 2: Generate Synthetic CSI Data
+
 After training, sample new latent representations (slightly modified versions of learned patterns).
+
 Pass these latent representations through the Decoder to create new synthetic CSI data.
+
 The generated CSI data will be similar but not identical to real fall and non-fall samples.
 
 Reconstruction loss and KL divergence to monitor quality of training.
